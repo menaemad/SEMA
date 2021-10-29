@@ -164,3 +164,4 @@ D:\Pixel\Asp.NetCore Traning\SEMA\SEMA\obj\Debug\net5.0\Razor\Views\Events\Detai
 D:\Pixel\Asp.NetCore Traning\SEMA\SEMA\obj\Debug\net5.0\Razor\Views\Events\Index.cshtml.g.cs
 D:\Pixel\Asp.NetCore Traning\SEMA\SEMA\obj\Debug\net5.0\Razor\Views\Shared\_EventModal.cshtml.g.cs
 D:\Pixel\Asp.NetCore Traning\SEMA\SEMA\obj\Debug\net5.0\Razor\Views\Events\CreateOrUpdate.cshtml.g.cs
+D:\Pixel\Asp.NetCore Traning\SEMA\SEMA\obj\Debug\net5.0\Razor\Views\Home\CalenderEvents.cshtml.g.cs

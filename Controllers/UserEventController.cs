@@ -28,9 +28,9 @@ namespace SEMA.Controllers
        public async Task<IActionResult> AddUser( UserEventDto userEventDto)
         {
             var eventResult=await _eventAppService.GetByIdAsync(userEventDto.EventId);
-            if (eventResult==null)
+            if (eventResult==null || !eventResult.Status)
             {
-                return  new JsonResult(new { Message= "Event Not Found", Success = false });
+                return  new JsonResult(new { Message= "Can not to add user in this event ", Success = false });
             }
            var result= await _userEventAppService.RegisterUserOnEvent(userEventDto);
             if (result)

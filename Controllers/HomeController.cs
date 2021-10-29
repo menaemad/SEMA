@@ -37,5 +37,17 @@ namespace SEMA.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult CalenderEvents()
+        {
+           
+            return View("CalenderEvents");
+        }
+        public async Task<IActionResult> GetEventsAsync()
+        {
+                var events =await _eventAppService.GetAllAsync();
+                return new JsonResult(new {  Data = events }) ;
+        }
+        
     }
 }
